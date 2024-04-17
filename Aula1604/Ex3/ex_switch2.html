@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha o Dia</title>
+    <style>
+        h2{
+            color:rgb(0, 0, 0);
+        }
+        label{
+            color:rgb(0, 0, 0);
+            font:10pt Arial Black;
+        }
+        span{
+            color:rgb(0, 0, 0);;
+            font: 9pt Arial Black;
+        }
+        div{
+            font-size: 20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <form action="ex_switch2.php" method="get">
+            <h2>Tem aula hoje?</h2>
+            <label for="dias">Escolha o dia</label>
+            <select name="dias" id="dias">
+                <option value="1">Segunda-Feira</option>
+                <option value="2">Terça-Feira</option>
+                <option value="3">Quarta-Feira</option>
+                <option value="4">Quinta-Feira</option>
+                <option value="5">Sexta-Feira</option>
+                <option value="6">Sábado</option>
+                <option value="7">Domingo</option>
+                
+            </select>        
+            
+
+            <button type="submit"><span>Verificar</span></button>
+
+
+        </form>
+        
+
+    </div>
+    
+</body>
+</html>

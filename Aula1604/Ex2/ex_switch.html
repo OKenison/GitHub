@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Ex</title>
+    <style>
+        label{
+            color:orangered;
+            font:10pt Arial Black;
+        }
+        span{
+            color:orangered;
+            font: 9pt Arial Black;
+        }
+        fieldset{
+            width: 200px;
+            height: 25;
+            padding: 5px; /*margem p dentro*/
+            margin: 5px; /*margem p fora*/
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div>
+        <form action="ex_switch.php" method="get">
+            <label for="num">Número</label>
+            </br>
+            <input type="number" name="num"
+            id="num"/>
+            </br>
+            <fieldset>
+                <input type="radio" name="oper" id="dobro" value="1" checked/>
+                <label for="dobro">Dobro</label>
+
+                <input type="radio" name="oper" id="cubo" value="2" checked/>
+                <label for="cubo">Cubo</label>
+                
+                <input type="radio" name="oper" id="raiz" value="3" checked/>
+                <label for="raiz">Raiz</label>
+            </br>
+
+            </fieldset>
+            <button type="submit"><span>Verificar</span></button>
+
+
+        </form>
+        
+
+    </div>
+    
+</body>
+</html>
